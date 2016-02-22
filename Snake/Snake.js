@@ -36,8 +36,8 @@ $(document).ready(function(){
 
     function create_wall()
     {
-        for(i=1;i<10;i++) {
-            for (j=1; j < 10; j++){
+        for(i=0;i<30;i++) {
+            for (j=0; j < 60; j++){
                 z = (i+j)*10;
                 //create_wall(i,j,z); //Now we can see the food particle
                 wall [z] = {
@@ -47,10 +47,6 @@ $(document).ready(function(){
                 paint_cell(wall[z].x, wall[z].y);
             }
         }
-
-    }
-    function paint_wall(){
-
     }
 
     function create_snake()
@@ -60,7 +56,7 @@ $(document).ready(function(){
         for(var i = length-1; i>=0; i--)
         {
             //This will create a horizontal snake starting from the top left
-            snake_array.push({x: 20, y:20});
+            snake_array.push({x: 1, y:70});
         }
     }
 
