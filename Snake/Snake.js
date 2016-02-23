@@ -13,6 +13,7 @@ $(document).ready(function(){
     var d;
     var food;
     var wall = [];
+    var allWall = [];
     var score;
 
     //Lets create the snake now
@@ -36,14 +37,51 @@ $(document).ready(function(){
 
     function create_wall()
     {
+
         for(i=0;i<30;i++) {
             for (j=0; j < 60; j++){
                 z = (i+j)*10;
-                //create_wall(i,j,z); //Now we can see the food particle
                 wall [z] = {
                     x: i,
                     y: j,
                 }
+                allWall.push(wall[z]);
+                paint_cell(wall[z].x, wall[z].y);
+            }
+        }
+
+        for(i=0;i<30;i++) {
+            for (j=0; j < 15; j++){
+                z = (i+j)*10;
+                wall [z] = {
+                    x: 25+i,
+                    y: 50+j,
+                }
+                allWall.push(wall[z]);
+                paint_cell(wall[z].x, wall[z].y);
+            }
+        }
+
+        for(i=0;i<18;i++) {
+            for (j=0; j < 10; j++){
+                z = (i+j)*10;
+                wall [z] = {
+                    x: 45+i,
+                    y: 62+j,
+                }
+                allWall.push(wall[z]);
+                paint_cell(wall[z].x, wall[z].y);
+            }
+        }
+
+        for(i=0;i<20;i++) {
+            for (j=0; j < 10; j++){
+                z = (i+j)*10;
+                wall [z] = {
+                    x: 20+i,
+                    y: 69+j,
+                }
+                allWall.push(wall[z]);
                 paint_cell(wall[z].x, wall[z].y);
             }
         }
@@ -100,7 +138,7 @@ $(document).ready(function(){
         //This will restart the game if the snake hits the wall
         //Lets add the code for body collision
         //Now if the head of the snake bumps into its body, the game will restart
-        if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array))
+        if(nx == -1 || nx == w/cw || ny == -1 || ny == h/cw || check_collision(nx, ny, snake_array) || check_WallCollision(nx, ny, snake_array))
         {
             //restart game
             init();
@@ -159,6 +197,18 @@ $(document).ready(function(){
         for(var i = 0; i < array.length; i++)
         {
             if(array[i].x == x && array[i].y == y)
+                return true;
+        }
+        return false;
+    }
+
+    function check_WallCollision(x, y, wall)
+    {
+        //This function will check if the provided x/y coordinates exist
+        //in an array of cells or not
+        for(var i = 0; i < allWall.length; i++)
+        {
+            if(allWall[i].x == x && allWall[i].y == y)
                 return true;
         }
         return false;
