@@ -50,11 +50,11 @@ function go() {
             }
 
             for (i = 0; i < 30; i++) {
-                for (j = 0; j < 15; j++) {
+                for (j = 0; j < 20; j++) {
                     z = (i + j) * 10;
                     wall [z] = {
                         x: 25 + i,
-                        y: 50 + j,
+                        y: 46 + j,
                     }
                     allWall.push(wall[z]);
                     paint_cell(wall[z].x, wall[z].y);
@@ -79,6 +79,222 @@ function go() {
                     wall [z] = {
                         x: 20 + i,
                         y: 69 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 40; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 50 + i,
+                        y: 52 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 80; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 70 + i,
+                        y: 65 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 60; i++) {
+                for (j = 0; j < 60; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 98 + i,
+                        y: 40 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 50; i++) {
+                for (j = 0; j < 19; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 80 + i,
+                        y: 30 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 30; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 50 + i,
+                        y: 32 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 40; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 40 + i,
+                        y: 4 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 33 + i,
+                        y: 30 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 27 + i,
+                        y: 18 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 33 + i,
+                        y: 5 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 15; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 55 + i,
+                        y: 0 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 60; i++) {
+                for (j = 0; j < 20; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 50 + i,
+                        y: 13 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 75 + i,
+                        y: 6 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 4; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 75 + i,
+                        y: 0 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 11; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 95 + i,
+                        y: 0 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 10; i++) {
+                for (j = 0; j < 11; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 110 + i,
+                        y: 0 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 40; i++) {
+                for (j = 0; j < 20; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 112 + i,
+                        y: 0 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 20; i++) {
+                for (j = 0; j < 7; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 116 + i,
+                        y: 20 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
+
+            for (i = 0; i < 4; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 110 + i,
+                        y: 22 + j,
                     }
                     allWall.push(wall[z]);
                     paint_cell(wall[z].x, wall[z].y);
@@ -212,6 +428,6 @@ function go() {
             //The snake is now keyboard controllable
         })
 
-    })
+         })
 
-}
+    }
