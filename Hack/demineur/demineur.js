@@ -1,6 +1,7 @@
 
 jeu=new Array(64);
 de=new Array(64);
+
 function depart(){
 	dt1=new Date();
 	hr1=dt1.getHours();
@@ -74,9 +75,9 @@ function joueurdemin(x,y){
 					document.images[x+'et'+y].src=jeu[x+y*8-9]+'.jpg';
 				}
 			}
-			alert("Vous avez perdu !!!");
+            $('#myModal').modal('show'); 
 			depart();
-			alert("tache de faire mieux !!!");
+            
 		}else if (jeu[x+y*8-9]==0){
 			for (x2 = x - 1; x2 < x + 2; x2++){
 				for (y2 = y - 1; y2 < y + 2 ; y2++){
