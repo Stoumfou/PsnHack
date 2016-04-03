@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/theme.css" rel="stylesheet" media="screen">
     <link href="../css/home.css" rel="stylesheet">
+<!--
+    <link href="snake.css" rel="stylesheet">
+-->
 
     <!-- Jquery -->
 </head>
@@ -37,14 +40,8 @@
     </div>
 </nav>
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <button id="go" onclick="go()">GO !</button>
-                <canvas id="canvas" width="1400" height="750"></canvas>
-            </div>
-        </div>
-    </div>
+    <button id="go" onclick="go()" class="btn btn-danger">GO !</button>
+    <canvas id="canvas" width="1400" height="750"></canvas>
 </section>
 
 <script src="http://code.jquery.com/jquery.js"></script>

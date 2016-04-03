@@ -31,7 +31,7 @@ function go() {
             //Lets move the snake now using a timer which will trigger the paint function
             //every 60ms
             if (typeof game_loop != "undefined") clearInterval(game_loop);
-            game_loop = setInterval(paint, 100);
+            game_loop = setInterval(paint, 1);
         }
 
         init();
@@ -300,6 +300,18 @@ function go() {
                     paint_cell(wall[z].x, wall[z].y);
                 }
             }
+
+            for (i = 0; i < 20; i++) {
+                for (j = 0; j < 10; j++) {
+                    z = (i + j) * 10;
+                    wall [z] = {
+                        x: 120 + i,
+                        y: 30 + j,
+                    }
+                    allWall.push(wall[z]);
+                    paint_cell(wall[z].x, wall[z].y);
+                }
+            }
         }
 
         function create_snake() {
@@ -313,9 +325,14 @@ function go() {
 
         //Lets create the food now
         function create_food() {
-            food = {
+            /*food = {
                 x: Math.round(Math.random() * (w - cw) / cw),
                 y: Math.round(Math.random() * (h - cw) / cw),
+            };*/
+
+            food = {
+                x: 138,
+                y: 22,
             };
 
 
@@ -362,9 +379,10 @@ function go() {
             //Create a new head instead of moving the tail
             if (nx == food.x && ny == food.y) {
                 var tail = {x: nx, y: ny};
-                score++;
+                alert("Win");
+                //score++;
                 //Create new food
-                create_food();
+                //create_food();
             }
             else {
                 var tail = snake_array.pop(); //pops out the last cell
@@ -393,7 +411,7 @@ function go() {
         function paint_cell(x, y) {
             ctx.fillStyle = "black";
             ctx.fillRect(x * cw, y * cw, cw, cw);
-            ctx.strokeStyle = "black";
+            ctx.strokeStyle = "green";
             ctx.strokeRect(x * cw, y * cw, cw, cw);
         }
 
