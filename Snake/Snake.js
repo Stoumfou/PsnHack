@@ -340,7 +340,12 @@ function go() {
             food = {
                 x: 138,
                 y: 22,
-            };
+            }
+
+            ;/*food = {
+                x: 2,
+                y: 70,
+            };*/
 
 
             //This will create a cell with x/y between 0-44
@@ -386,8 +391,7 @@ function go() {
             //Create a new head instead of moving the tail
             if (nx == food.x && ny == food.y) {
                 var tail = {x: nx, y: ny};
-                alert("You managed to reach the PlayStation Network, you will now have to bypass its firewall");
-                window.location = '../Mastermind/mastermind.html';
+                $("#myModal").modal("show");
                 score++;
                 //Create new food
                 //create_food();

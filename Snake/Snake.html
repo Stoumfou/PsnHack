@@ -53,8 +53,27 @@
 
     <canvas id="canvas" width="1400" height="750"></canvas>
 </section>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Win</h4>
+            </div>
+            <div class="modal-body">
+                <p>You managed to reach the PlayStation Network, you will now have to bypass its firewall</p>
+            </div>
+            <div class="modal-footer">
+                <a href="../Mastermind/mastermind.html" type="button" class="btn btn-success">Next</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="Snake.js" type="text/javascript"></script>
 <script type="application/javascript">
     $("#canvas").hide();
