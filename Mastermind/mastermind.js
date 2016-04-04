@@ -51,8 +51,9 @@ function play(){
 			
 		if(win())
 		{
-			alert("VICTOIRE !\nLe code est: "+code[0]+code[1]+code[2]+code[3]);
-			window.location = '../Memory/memory.html';
+			var t = "The code is : "+code[0]+code[1]+code[2]+code[3];
+			$("#t").text(t);
+			$("#myModal").modal("show");
 		}
 			
 		
