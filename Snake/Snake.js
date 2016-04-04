@@ -341,10 +341,6 @@ function go() {
                 x: 138,
                 y: 22,
             };
-            food = {
-                x: 2,
-                y: 70,
-            };
 
 
             //This will create a cell with x/y between 0-44
