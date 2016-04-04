@@ -41,13 +41,20 @@
     </div>
 </nav>
 <section>
-    <button id="go" onclick="go()" class="btn btn-danger">GO !</button>
+    <div class="container">
+        <div class="row">
+            <button id="go" onclick="go()" class="btn btn-danger">GO !</button>
+        </div>
+    </div>
+
     <canvas id="canvas" width="1400" height="750"></canvas>
 </section>
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="../../js/bootstrap.min.js"></script>
+<script src="../js/jquery.js"></script>
 <script src="Snake.js" type="text/javascript"></script>
+<script type="application/javascript">
+    $("#canvas").hide();
+</script>
 
 </body>
 </html>

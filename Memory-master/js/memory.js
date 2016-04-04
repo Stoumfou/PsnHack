@@ -212,7 +212,7 @@
     this.gameMeta.innerHTML = this.gameMetaHTML;
     this.game.appendChild(this.gameMeta);
 
-    this.gameStartScreenHTML = '<h2 class="mg__start-screen--heading">Welcome to the Memory Game!</h2>\
+    this.gameStartScreenHTML = '<h2>Maintenant il faut récuperer les données sensibles du serveur </h2>\
       <p class="mg__start-screen--text">Flip the tiles and try to match them up in pairs. Pair up all the tiles to win. Try to complete the game in as few moves as possible!</p>\
       <h3 class="mg__start-screen--sub-heading">Select Level</h3>\
       <ul class="mg__start-screen--level-select">\
@@ -488,9 +488,9 @@
     var self = this;
     if (this.options.onGameEnd() === false) {
       this._clearGame();
-      this.gameMessages.innerHTML = '<h2 class="mg__onend--heading">Sweet!</h2>\
+      this.gameMessages.innerHTML = '<h2 class="mg__onend--heading">Bravo tu as récupérer les données sensibles !</h2>\
         <p class="mg__onend--message">You won the round in ' + this.numMoves + ' moves. Go you.</p>\
-        <button id="mg__onend--restart" class="mg__button">Play again?</button>';
+        <a href="/PsnHack/Demineur/demineur.html" class="btn btn-success">Continue </a>';
       this.game.appendChild(this.gameMessages);
       document.getElementById("mg__onend--restart").addEventListener( "click", function(e) {
         self.resetGame();

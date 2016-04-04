@@ -10305,6 +10305,4 @@
 
     return jQuery;
 
-}));/**
- * Created by Alexis on 31/03/2016.
- */
+}));

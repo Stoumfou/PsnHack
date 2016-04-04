@@ -3,6 +3,8 @@
  */
 function go() {
 
+    $("#canvas").show();
+    $("#go").hide();
     $(document).ready(function () {
         //Canvas stuff
         var canvas = $("#canvas")[0];
@@ -34,7 +36,12 @@ function go() {
             game_loop = setInterval(paint, 1);
         }
 
-        init();
+        if(score>=1){
+            $("#canvas").hide();
+        }
+        else {
+            init();
+        }
         function create_wall() {
 
             for (i = 0; i < 30; i++) {
@@ -379,8 +386,9 @@ function go() {
             //Create a new head instead of moving the tail
             if (nx == food.x && ny == food.y) {
                 var tail = {x: nx, y: ny};
-                alert("Win");
-                //score++;
+                alert("Bravo tu as réussi à pénétrer sur le réseau du PlayStation Network, tu vas maintenant devoir craquer le mot de passe du Firewall");
+                window.location = '/PsnHack/Mastermind/mastermind.html';
+                score++;
                 //Create new food
                 //create_food();
             }

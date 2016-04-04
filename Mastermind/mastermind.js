@@ -88,10 +88,10 @@ function win(){
 $(document).ready(function(){
     var select = '';
     for(var i=0; i<4; i++){
-        select += '<select id="select'+i+'"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select>';
+        select += '<div class="form-group col-xs-2"><select id="select'+i+'" class="form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></div>';
     }
     
-	$('#game').append('<div class="col-lg-3" id="tried"></div><div class="col-lg-3" id="res"></div><div class="col-lg-6"><label>Input:</label>'+select+'<button id="try">Try</button></div>');
+	$('#game').append('<div class="col-lg-3" id="tried"></div><div class="col-lg-3" id="res"></div><div class="col-lg-6">'+select+'<button id="try" class="btn btn-danger">Try</button></div>');
     
 	play();	
 });

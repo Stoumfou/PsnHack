@@ -5902,7 +5902,6 @@ td.visible-print {
   }
 }
 body {
-  background: #0d0d0d url(../images/bg.png) repeat;
   font-family: 'Roboto', sans-serif;
 }
 h1,
@@ -6041,9 +6040,6 @@ legend {
 .navbar-default > li > a {
   text-shadow: 1px 1px 0px rgba(250, 250, 250, 0.5);
 }
-.navbar-inverse {
-  background: #00cc00 url(../images/bg.png) center center repeat;
-}
 .navbar-inverse .active > a {
   text-shadow: 1px 1px 0px #171717;
 }
@@ -6126,7 +6122,6 @@ legend {
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
   border: none;
   margin-top: 12px;
-  background: #00cc00 url(../images/bg.png) repeat;
 }
 .dropdown-menu:before {
   content: '';
