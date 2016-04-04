@@ -213,8 +213,8 @@
     this.game.appendChild(this.gameMeta);
 
     this.gameStartScreenHTML = '<div class="jumbotron" style="margin-top:-100px;">\
-    <h2>Maintenant il faut récuperer les données sensibles du serveur</h2>\
-    <h2>Flip the tiles and try to match them up in pairs. Pair up all the tiles to win. Try to complete the game in as few moves as possible!</h2></div>\
+    <h2>Now that we are in, we must get the datas on the server</h2>\
+    <h2>Flip the tiles and try to match them up in pairs. Pair up all the tiles to win.</h2></div>\
       <h3 class="mg__start-screen--sub-heading">Select Level</h3>\
       <ul class="mg__start-screen--level-select">\
       <li><span data-level="1">Level 1 - Easy (4 x 2)</span></li>\
@@ -489,7 +489,7 @@
     var self = this;
     if (this.options.onGameEnd() === false) {
       this._clearGame();
-      this.gameMessages.innerHTML = '<h2 class="mg__onend--heading">Bravo tu as récupérer les données sensibles !</h2>\
+      this.gameMessages.innerHTML = '<h2 class="mg__onend--heading">Excellent, the datas are ours !</h2>\
         <p class="mg__onend--message">You won the round in ' + this.numMoves + ' moves. Go you.</p>\
         <a href="../../Demineur/demineur.html" class="btn btn-success">Continue </a>';
       this.game.appendChild(this.gameMessages);

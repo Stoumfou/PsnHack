@@ -386,8 +386,8 @@ function go() {
             //Create a new head instead of moving the tail
             if (nx == food.x && ny == food.y) {
                 var tail = {x: nx, y: ny};
-                alert("Bravo tu as réussi à pénétrer sur le réseau du PlayStation Network, tu vas maintenant devoir craquer le mot de passe du Firewall");
-                window.location = '../Mastermind/mastermind.html';
+                alert("You managed to reach the PlayStation Network, you will now have to bypass its firewall");
+                window.location = '/PsnHack/Mastermind/mastermind.html';
                 score++;
                 //Create new food
                 //create_food();
