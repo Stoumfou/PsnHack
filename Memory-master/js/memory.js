@@ -491,7 +491,7 @@
       this._clearGame();
       this.gameMessages.innerHTML = '<h2 class="mg__onend--heading">Bravo tu as récupérer les données sensibles !</h2>\
         <p class="mg__onend--message">You won the round in ' + this.numMoves + ' moves. Go you.</p>\
-        <a href="/PsnHack/Demineur/demineur.html" class="btn btn-success">Continue </a>';
+        <a href="../../Demineur/demineur.html" class="btn btn-success">Continue </a>';
       this.game.appendChild(this.gameMessages);
       document.getElementById("mg__onend--restart").addEventListener( "click", function(e) {
         self.resetGame();

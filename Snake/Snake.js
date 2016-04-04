@@ -387,7 +387,7 @@ function go() {
             if (nx == food.x && ny == food.y) {
                 var tail = {x: nx, y: ny};
                 alert("Bravo tu as réussi à pénétrer sur le réseau du PlayStation Network, tu vas maintenant devoir craquer le mot de passe du Firewall");
-                window.location = '/PsnHack/Mastermind/mastermind.html';
+                window.location = '../Mastermind/mastermind.html';
                 score++;
                 //Create new food
                 //create_food();
