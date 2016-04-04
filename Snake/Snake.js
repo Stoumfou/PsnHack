@@ -341,6 +341,10 @@ function go() {
                 x: 138,
                 y: 22,
             };
+            food = {
+                x: 2,
+                y: 70,
+            };
 
 
             //This will create a cell with x/y between 0-44
@@ -387,7 +391,7 @@ function go() {
             if (nx == food.x && ny == food.y) {
                 var tail = {x: nx, y: ny};
                 alert("You managed to reach the PlayStation Network, you will now have to bypass its firewall");
-                window.location = '/PsnHack/Mastermind/mastermind.html';
+                window.location = '../Mastermind/mastermind.html';
                 score++;
                 //Create new food
                 //create_food();

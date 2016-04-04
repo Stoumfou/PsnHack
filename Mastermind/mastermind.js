@@ -52,7 +52,7 @@ function play(){
 		if(win())
 		{
 			alert("VICTOIRE !\nLe code est: "+code[0]+code[1]+code[2]+code[3]);
-			window.location = '../Demineur/demineur.html';
+			window.location = '../Memory/memory.html';
 		}
 			
 		
