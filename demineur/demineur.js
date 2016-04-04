@@ -98,7 +98,7 @@ function joueurdemin(x,y){
 		}
 	}
 	if (a==10){
-		alert("gagné !!!");
+		alert("Well done !!!");
 		depart();
 	}
 }
