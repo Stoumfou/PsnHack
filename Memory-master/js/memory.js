@@ -212,8 +212,9 @@
     this.gameMeta.innerHTML = this.gameMetaHTML;
     this.game.appendChild(this.gameMeta);
 
-    this.gameStartScreenHTML = '<h2>Maintenant il faut récuperer les données sensibles du serveur </h2>\
-      <p class="mg__start-screen--text">Flip the tiles and try to match them up in pairs. Pair up all the tiles to win. Try to complete the game in as few moves as possible!</p>\
+    this.gameStartScreenHTML = '<div class="jumbotron" style="margin-top:-100px;">\
+    <h2>Maintenant il faut récuperer les données sensibles du serveur</h2>\
+    <h2>Flip the tiles and try to match them up in pairs. Pair up all the tiles to win. Try to complete the game in as few moves as possible!</h2></div>\
       <h3 class="mg__start-screen--sub-heading">Select Level</h3>\
       <ul class="mg__start-screen--level-select">\
       <li><span data-level="1">Level 1 - Easy (4 x 2)</span></li>\

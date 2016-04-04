@@ -49,7 +49,11 @@ function play(){
 					
 		$('#res').text(display);		
 			
-		if(win())alert("VICTOIRE !\nLe code est:"+code[0]+code[1]+code[2]+code[3]);
+		if(win())
+		{
+			alert("VICTOIRE !\nLe code est: "+code[0]+code[1]+code[2]+code[3]);
+			window.location = '/PsnHack/Demineur/demineur.html';
+		}
 			
 		
     $('#tried').text(""+input[0]+" "+input[1]+" "+input[2]+" "+input[3]);

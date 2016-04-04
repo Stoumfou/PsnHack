@@ -4,7 +4,7 @@
 function go() {
 
     $("#canvas").show();
-    $("#go").hide();
+    $("#info").hide();
     $(document).ready(function () {
         //Canvas stuff
         var canvas = $("#canvas")[0];

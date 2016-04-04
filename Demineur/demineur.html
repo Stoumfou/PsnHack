@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>PSN Hack</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../css/theme.css" rel="stylesheet" media="screen">
+    <link href="../css/theme.css" rel="stylesheet" media="screen">
     <link href="../css/home.css" rel="stylesheet">
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script language="javascript" src="demineur.js"></script>
-
-    <!-- Jquery -->
 </head>
 
 <body onload="depart()">
@@ -25,7 +23,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">PSN HACK</a>
+                <a class="navbar-brand" href="../index.html">PSN HACK</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,44 +33,22 @@
                     <li><a href="../Snake/Snake.html">Step 1</a></li>
                     <li><a href="../Mastermind/mastermind.html">Step 2</a></li>
                     <li><a href="../Memory-master/memory.html">Step 3</a></li>
-                    <li class="active"><a href="#">Step 4</a></li>
+                    <li class="active"><a href="demineur.html">Step 4</a></li>
                     <li><a href="../finish.html">Finish</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
     </nav>
-    <section background="../../../fond.jpg">
-        <table border="1" width="100%">
-            <tr>
-                <td bgcolor="0077ff">
-                    <center>
-                        
-                        <!-- Modal -->
-                        <div id="myModal" class="modal fade" role="dialog">
-                            <div class="modal-dialog">
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Perdu</h4>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Try again</button>
-                                        <button type="button" class="btn btn-success" data-dismiss="modal">Continue ?</button>
-                                    </div>
-                                     <div class="modal-footer">
-                                       
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <p><font color="ff7700" size="7">Demineur</font></p>
-                    </center>
-                </td>
-            </tr>
-        </table>
+    <section>
+        <div class="jumbotron" style="margin-top:-20px;">
+            <div class="container">
+        <div class="row">
+                    <h2>Vite il faut maintenant effacer les traces et resortir du système sans être repérer !
+                        <br/>Pour cela il faut résoudre ce démineur</h2>
+        </div>
+        </div>
+        </div>
         <!-- set up the modal to start hidden and fade in and out -->
 
         <Center>
@@ -159,7 +135,24 @@
             </form>
         </center>
     </section>
-
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Perdu</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Vous vous êtes fais repérer</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Try again</button>
+                    <a href="../finish.html" type="button" class="btn btn-success">Continue ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
